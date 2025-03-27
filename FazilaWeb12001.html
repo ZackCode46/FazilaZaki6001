@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website pribadi Fazila Zaki Ahmad dengan tema game adventure 2D">
+    <meta name="keywords" content="Fazila Zaki Ahmad, Portfolio, Game Style Website, Web Developer">
+    <meta name="author" content="Fazila Zaki Ahmad">
+    <title>Fazila Zaki Ahmad - Adventure Profile</title>
+    
+    <link rel="stylesheet" href="FazilaWeb12001.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="FazilaWeb12001.js"></script>
+</head>
+<body>
+    <div id="profile-container">
+        <header class="hero">
+            <h1 class="title">🌍 Fazila Zaki's Adventure Profile 🚀</h1>
+            <p class="subtitle">Jelajahi dunia digital saya dalam gaya petualangan interaktif!</p>
+            <a href="#contact" class="cta-button">Hubungi Saya</a>
+        </header>
+        
+        <div class="character">
+            <img src="images/CharacterImage.jpeg" alt="Gambar karakter Fazila Zaki Ahmad" id="character">
+        </div>
+
+        <nav class="menu">
+            <button onclick="showSection('about')">🏡 Home</button>
+            <button onclick="showSection('skills')">⚔️ Skills</button>
+            <button onclick="showSection('projects')">🛠️ Projects</button>
+            <button onclick="showSection('testimonials')">🌟 Testimonials</button>
+            <button onclick="showSection('contact')">📞 Contact</button>
+            <button onclick="showSection('blog')">📝 Blog</button>
+        </nav>
+
+        <section id="about">
+            <img src="images/ProfileImage.jpg" alt="Foto Fazila Zaki Ahmad" class="profile-img">
+            <h2>👨‍💻 Tentang Saya</h2>
+            <p>Hai! Saya <b>Fazila Zaki Ahmad</b>, seorang pengembang web yang senang menciptakan pengalaman digital unik dan interaktif.</p>
+        </section>
+
+        <section id="skills">
+            <h2>⚔️ Skills & Experience</h2>
+            <ul>
+                <li>💻 Web Development</li>
+                <li>🎮 Game Development</li>
+                <li>🔧 Embedded Systems</li>
+                <li>🔌 Network & Electrical Systems</li>
+                <li>🎙 Public Speaking</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>🛠️ Proyek Unggulan</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>🎮 Game 2D Adventure</h3>
+                    <p>Game berbasis HTML5 dengan animasi smooth dan gameplay interaktif.</p>
+                    <a href="#" class="btn">Lihat Proyek</a>
+                </div>
+                <div class="project-item">
+                    <h3>🌐 Website Portfolio Interaktif</h3>
+                    <p>Website pribadi dengan tema game yang bisa dijelajahi.</p>
+                    <a href="#" class="btn">Lihat Proyek</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>🌟 Testimoni</h2>
+            <p>"Fazila adalah pengembang web berbakat dengan kreativitas tinggi!" - Klien A</p>
+            <p>"Sangat profesional dan mudah diajak bekerja sama." - Klien B</p>
+        </section>
+
+        <section id="blog">
+            <h2>📝 Blog</h2>
+            <p>Artikel dan wawasan terbaru dari saya:</p>
+            <ul>
+                <li><a href="#">Bagaimana Membuat Website Interaktif</a></li>
+                <li><a href="#">Mengenal Dasar-dasar C# untuk Game Development</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>📞 Hubungi Saya</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <p>Atau hubungi via WhatsApp: <a href="https://wa.me/6289653720025" target="_blank">0896-5372-0025</a></p>
+        </section>
+
+        <section id="map-section">
+            <h2>📍 Lokasi Saya</h2>
+            <div id="map" style="height: 400px;"></div>
+            <button onclick="getLocation()">Temukan Lokasi</button>
+        </section>
+
+        <div class="cv-button">
+            <a href="documents/CV_FAZILZA.jpg" target="_blank">📄 Lihat CV</a>
+        </div>
+
+        <footer>
+            <p>🌐 Follow saya: 
+                <a href="https://www.instagram.com/fazilazakiahmd" target="_blank">Instagram</a> | 
+                <a href="https://www.linkedin.com/in/fazila-zaki-1471b2335" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
